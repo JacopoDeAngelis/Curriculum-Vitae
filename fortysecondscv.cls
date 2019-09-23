@@ -482,7 +482,11 @@
 
 \newcommand{\cvsignature}{
 	\vfill
-	{\large\bfseries\color{maincolor!70}Autorizzo il trattamento dei dati personali contenuti nel mio curriculum vitae in base all'art. 13 del D. Lgs. 196/2003 e all'art. 13 GDPR 679/16.}
+	{\large\bfseries\color{maincolor!70}
+	I hereby authorize the use of my personal data in accordance to the GDPR 679/16 - "European regulation on the protection of personal data".
+
+% Autorizzo il trattamento dei dati personali contenuti nel mio curriculum vitae in base all'art. 13 del D. Lgs. 196/2003 e all'art. 13 GDPR 679/16.
+    }
 }
 
 

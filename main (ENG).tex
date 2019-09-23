@@ -1,0 +1,201 @@
+% FortySecondsCV LaTeX templ
+% Copyright © 2019 René Wirnata <rene.wirnata@pandascience.net>
+% Licensed under the 3-Clause BSD License. See LICENSE file for details.
+%
+% Attributions
+% ------------
+% * fortysecondscv is based on the twentysecondcv class by Carmine Spagnuolo 
+%   (cspagnuolo@unisa.it), released under the MIT license and available under
+%   https://github.com/spagnuolocarmine/TwentySecondsCurriculumVitae-LaTex
+% * further attributions are indicated immediately before corresponding code
+
+
+%-------------------------------------------------------------------------------
+%                             ADDITIONAL PACKAGES
+%-------------------------------------------------------------------------------
+\documentclass[
+  a4paper, 
+%   showframes,
+%   vline=2.2em,
+%   maincolor=cvgreen,
+%   sectioncolor=red,
+%   subsectioncolor=orange,
+%   itemtextcolor=black!80,
+%   sidebarwidth=0.4\paperwidth,
+%   topbottommargin=0.03\paperheight,
+%   leftrightmargin=20pt,
+%   proilepicsize=4.5cm,
+]{fortysecondscv}
+
+% improve word spacing and hyphenation
+\usepackage{microtype}
+\usepackage{ragged2e}
+\usepackage{multicol}
+\usepackage{xcolor}
+% take care of proper font encoding
+\ifxetexorluatex
+	\usepackage{fontspec}
+	\defaultfontfeatures{Ligatures=TeX}
+% \newfontfamily\headingfont[Path = fonts/]{segoeuib.ttf} % local font
+\else
+	\usepackage[utf8]{inputenc}
+	\usepackage[T1]{fontenc}
+% \usepackage[sfdefault]{noto} % use noto google font
+\fi
+
+% enable mathematical syntax for some symbols like \varnothing
+\usepackage{amssymb}
+
+% bubble diagram configuration
+\usepackage{smartdiagram}
+\smartdiagramset{
+  % defaut font size is \large, so adjust to harmonize with sidebar layout
+  bubble center node font = \footnotesize,
+  bubble node font = \footnotesize,
+  % default: 4cm/2.5cm; make minimum diameter relative to sidebar size
+  bubble center node size = 0.4\sidebartextwidth,
+  bubble node size = 0.25\sidebartextwidth,
+  distance center/other bubbles = 1.5em,
+  % set center bubble color
+  bubble center node color = maincolor!70,
+  % define the list of colors usable in the diagram
+  set color list = {maincolor!10, maincolor!40,
+  maincolor!20, maincolor!60, maincolor!35},
+  % sets the opacity at which the bubbles are shown
+  bubble fill opacity = 0.8,
+}
+
+
+%-------------------------------------------------------------------------------
+%                            PERSONAL INFORMATION
+%-------------------------------------------------------------------------------
+%% mandatory information
+% your name
+%\cvname{Jacopo\\De Angelis}
+% job title/career
+%\cvjobtitle{Programmatore,\\[0.2em] Studente di informatica}
+
+%% optional information
+% profile picture
+\cvprofilepic{pics/profile.jpg}
+
+% NOTE: ordering in sidebar will mimic the following order
+% date of birth
+% \cvbirthday{}
+% short address/location, use \newline if more than 1 line is required
+\cvaddress{Milan}
+% phone number
+\cvphone{348 7131298}
+% personal website
+% \cvsite{ }
+% email address
+\cvmail{jacopodeangelis.1993@gmail.com}
+% pgp key
+% \cvkey{ }{ }
+% any other custom entry
+% \cvcustomdata{ }{ }
+
+%-------------------------------------------------------------------------------
+%                              SIDEBAR 1st PAGE
+%-------------------------------------------------------------------------------
+% add more profile sections to sidebar on first page
+\addtofrontsidebar{
+	% include gosquare national flags from https://github.com/gosquared/flags;
+	% naming according to ISO 3166-1 alpha-2 country codes
+	\graphicspath{{pics/flags/}}
+
+	% social network accounts incl. proper hyperlinks
+%	\profilesection{Social Network}
+%		\begin{icontable}{2.5em}{1em}
+%		    % overleaf still not supports Academicons and FontAwesome5 for XeLaTeX, which contain the overleaf %logl...unbelievable...
+		    %\social{\aiOverleafSquare}
+%			\social{\faArchive}
+%				}
+%				{}
+%			\social{\faGithub}
+%				{}
+%				{}
+%		\end{icontable}
+
+	\profilesection{Languages}
+		\skill{\flag{Italy.png}}{Italian \textbf{C2}}
+  	    \skill{\flag{GB.png}}{English \textbf{B2}}
+
+	\profilesection{Hard Skills}
+		\skill{\includegraphics[scale=0.1]{pics/paradigm.png}}{Knowledge and use of object oriented, functional and logic programming paradigms}
+		\skill{\includegraphics[scale=0.1]{pics/programming.png}}{Java, Lisp, Prolog, Python, SQL}
+		\skill{\includegraphics[scale=0.1]{pics/database.png}}{Database modelling}
+		\skill{\includegraphics[scale=0.3]{pics/APS.png}}{Software design and analysis}
+		\skill{\includegraphics[scale=0.1]{pics/document.png}}{Use of the Office suite and LaTeX}
+
+	\profilesection{Soft Skills}
+ 		\skill{\includegraphics[scale=0.04]{pics/problem_solving.png}}{Problem solving}
+ 		\skill{\includegraphics[scale=0.04]{pics/lateral_thinking.png}}{Lateral thinking}
+ 		\skill{\includegraphics[scale=0.04]{pics/discussion.png}}{Group mediation}
+ 		\skill{\includegraphics[scale=0.04]{pics/study.png}}{Focused learning}
+ 		\skill{\includegraphics[scale=0.04]{pics/speaking.png}}{Public speaking}
+    
+    \profilesection{Interests}
+        \skill{\includegraphics[scale=0.04]{pics/science.png}}{Science}
+        \skill{\includegraphics[scale=0.04]{pics/technology.png}}{Technology}
+        \skill{\includegraphics[scale=0.04]{pics/ux.png}}{UX}
+	}
+
+\usepackage{ragged2e}
+%-------------------------------------------------------------------------------
+%                         TABLE ENTRIES RIGHT COLUMN
+%-------------------------------------------------------------------------------
+\begin{document}
+
+\makefrontsidebar
+
+    \begin{flushleft}
+        {\Huge\color{maincolor}Jacopo De Angelis} \\
+        {\Large\color{black!80} Programmer, CS student} \\
+    \end{flushleft}
+
+\fcolorbox{white}{gray}{\parbox{\dimexpr\textwidth-2\fboxsep-2\fboxrule}{
+\quad
+}}
+
+\cvsection{Education}
+\cvsubsection{University}
+\begin{cvtable}[2.5]
+	\cvitem{2017 - now}{\textbf{Bachelor in computer science}}{University of Milano-Bicocca}{}
+    \cvitem{2012-2017}{\textbf{Bachelor in economics studies and managemet}}{University of Milano-Bicocca}{Graduation grade: 100/110}
+\end{cvtable}
+\cvsubsection{High school}
+\begin{cvtable}[1.5]
+    \cvitem{2007-2012}{\textbf{Scientific high school diploma}}{Liceo Cavalieri, Verbania}{}
+\end{cvtable}
+
+\cvsection{Working experience}
+\begin{cvtable}[3]
+    \cvitem{2018-2019}{Secretary}{INFN office in Milano-Bicocca}{University collaboration. Organisation and management of conferences, fulfillment of legal obligations regarding the collaboration with the INFN guests.}
+	\cvitem{2011}{Vendor}{Bookshop Margaroli, Verbania}{Sales and depot management.}
+\end{cvtable}
+
+%\cvsection{Pubblicazioni}
+%\begin{cvtable}
+%	\cvpubitem{Titolo}{Collaboratori}
+%		{Pubblicato su}{Data}
+%\end{cvtable}
+
+
+%\cvsection{Premi}
+%\begin{cvtable}
+%	\cvitem{Data}{Nome premio}{Conferito da}{}
+%\end{cvtable}
+
+
+\cvsection{Extra-curricular activities}
+\begin{cvtable}
+	\cvitemshort{\textbf{Peer educator}}{Training regarding small group management. Active teaching about risky behaviors and bullying. Participation in an Interreg project in Nizza.}
+	\cvitemshort{}{}
+	\cvitemshort{\textbf{Event organization}}{Collaboration with Studenti Indipendenti Bicocca to organize and manage events and consulting about financial and legal obligations.}
+\end{cvtable}
+
+% \cvsection{Su di me}
+\cvsignature
+
+\end{document} 
