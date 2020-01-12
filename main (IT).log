@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2019.12.18)  12 JAN 2020 23:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2019.12.18)  12 JAN 2020 23:01
 entering extended mode
-**"./main (ENG).tex"
-("main (ENG).tex"
+**"./main (IT).tex"
+("main (IT).tex"
 LaTeX2e <2019-10-01> patch level 3
 (fortysecondscv.cls
 Document Class: fortysecondscv 2019/05/17 CV class
@@ -1266,8 +1266,8 @@ diagramlibrarycore.definitions.code.tex")
 ("C:\Users\jacop\AppData\Local\Programs\MiKTeX 2.9\tex/latex/smartdiagram\smart
 diagramlibrarycore.styles.code.tex")
 ("C:\Users\jacop\AppData\Local\Programs\MiKTeX 2.9\tex/latex/smartdiagram\smart
-diagramlibrarycore.commands.code.tex")) ("main (ENG).aux")
-\openout1 = `"main (ENG).aux"'.
+diagramlibrarycore.commands.code.tex")) ("main (IT).aux")
+\openout1 = `"main (IT).aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 149.
 LaTeX Font Info:    ... okay on input line 149.
@@ -1383,9 +1383,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 149.
 LaTeX Info: Redefining \pageref on input line 149.
 LaTeX Info: Redefining \nameref on input line 149.
- ("main (ENG).out") ("main (ENG).out")
+ ("main (IT).out") ("main (IT).out")
 \@outlinefile=\write4
-\openout4 = `"main (ENG).out"'.
+\openout4 = `"main (IT).out"'.
 
 LaTeX Info: Redefining \microtypecontext on input line 149.
 Package microtype Info: Generating PDF output.
@@ -1405,18 +1405,68 @@ Package microtype Info: Loading generic protrusion settings for font family
 
 ABD: EverySelectfont initializing macros
 LaTeX Info: Redefining \selectfont on input line 149.
+<pics/profile.jpg, id=33, 2274.4975pt x 2274.4975pt>
+File: pics/profile.jpg Graphic file (type jpg)
+<use pics/profile.jpg>
+Package pdftex.def Info: pics/profile.jpg  used on input line 151.
+(pdftex.def)             Requested size: 142.20471pt x 142.19044pt.
 LaTeX Font Info:    Font shape `T1/ClearSans-TLF/m/n' in size <24.88> not avail
 able
 (Font)              Font shape `T1/ClearSans-TLF/regular/n' tried instead on in
 put line 151.
 LaTeX Font Info:    Font shape `T1/ClearSans-TLF/regular/n' will be
 (Font)              scaled to size 24.88pt on input line 151.
+
+! Argument of \cvname has an extra }.
+<inserted text> 
+                \par 
+l.151 \makefrontsidebar
+                       
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+! Paragraph ended before \cvname was complete.
+<to be read again> 
+                   \par 
+l.151 \makefrontsidebar
+                       
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
 LaTeX Font Info:    Font shape `T1/ClearSans-TLF/m/n' in size <14.4> not availa
 ble
 (Font)              Font shape `T1/ClearSans-TLF/regular/n' tried instead on in
 put line 151.
 LaTeX Font Info:    Font shape `T1/ClearSans-TLF/regular/n' will be
 (Font)              scaled to size 14.4pt on input line 151.
+! Argument of \cvjobtitle has an extra }.
+<inserted text> 
+                \par 
+l.151 \makefrontsidebar
+                       
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+! Paragraph ended before \cvjobtitle was complete.
+<to be read again> 
+                   \par 
+l.151 \makefrontsidebar
+                       
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
 
 ("C:\Users\jacop\AppData\Local\Programs\MiKTeX 2.9\tex/latex/microtype\mt-cmr.c
 fg")
@@ -1438,7 +1488,7 @@ able
 put line 151.
 LaTeX Font Info:    Font shape `T1/ClearSans-TLF/regular/n' will be
 (Font)              scaled to size 20.74pt on input line 151.
-<pics/flags/Italy.png, id=39, 64.24pt x 64.24pt>
+<pics/flags/Italy.png, id=40, 64.24pt x 64.24pt>
 File: pics/flags/Italy.png Graphic file (type png)
 <use pics/flags/Italy.png>
 Package pdftex.def Info: pics/flags/Italy.png  used on input line 151.
@@ -1449,77 +1499,72 @@ e
  line 151.
 LaTeX Font Info:    Font shape `T1/ClearSans-TLF/bold/n' will be
 (Font)              scaled to size 10.0pt on input line 151.
-<pics/flags/GB.png, id=41, 64.24pt x 64.24pt>
+<pics/flags/GB.png, id=42, 64.24pt x 64.24pt>
 File: pics/flags/GB.png Graphic file (type png)
 <use pics/flags/GB.png>
 Package pdftex.def Info: pics/flags/GB.png  used on input line 151.
 (pdftex.def)             Requested size: 10.0pt x 9.99924pt.
-<pics/paradigm.png, id=42, 128.48pt x 128.48pt>
+<pics/paradigm.png, id=43, 128.48pt x 128.48pt>
 File: pics/paradigm.png Graphic file (type png)
 <use pics/paradigm.png>
 Package pdftex.def Info: pics/paradigm.png  used on input line 151.
 (pdftex.def)             Requested size: 12.84874pt x 12.84874pt.
-
-Underfull \hbox (badness 1043) in paragraph at lines 151--151
-\T1/ClearSans-TLF/regular/n/10 (+20) ented, func-tional and logic pro-
- []
-
-<pics/programming.png, id=43, 128.48pt x 128.48pt>
+<pics/programming.png, id=44, 128.48pt x 128.48pt>
 File: pics/programming.png Graphic file (type png)
 <use pics/programming.png>
 Package pdftex.def Info: pics/programming.png  used on input line 151.
 (pdftex.def)             Requested size: 12.84874pt x 12.84874pt.
-<pics/database.png, id=44, 128.48pt x 128.48pt>
+<pics/database.png, id=45, 128.48pt x 128.48pt>
 File: pics/database.png Graphic file (type png)
 <use pics/database.png>
 Package pdftex.def Info: pics/database.png  used on input line 151.
 (pdftex.def)             Requested size: 12.84874pt x 12.84874pt.
-<pics/APS.png, id=45, 48.18pt x 48.18pt>
+<pics/APS.png, id=46, 48.18pt x 48.18pt>
 File: pics/APS.png Graphic file (type png)
 <use pics/APS.png>
 Package pdftex.def Info: pics/APS.png  used on input line 151.
 (pdftex.def)             Requested size: 14.4541pt x 14.4541pt.
-<pics/document.png, id=46, 128.48pt x 128.48pt>
+<pics/document.png, id=47, 128.48pt x 128.48pt>
 File: pics/document.png Graphic file (type png)
 <use pics/document.png>
 Package pdftex.def Info: pics/document.png  used on input line 151.
 (pdftex.def)             Requested size: 12.84874pt x 12.84874pt.
-<pics/problem_solving.png, id=47, 385.44pt x 385.44pt>
+<pics/problem_solving.png, id=48, 385.44pt x 385.44pt>
 File: pics/problem_solving.png Graphic file (type png)
 <use pics/problem_solving.png>
 Package pdftex.def Info: pics/problem_solving.png  used on input line 151.
 (pdftex.def)             Requested size: 15.41496pt x 15.41496pt.
-<pics/lateral_thinking.png, id=48, 385.44pt x 385.44pt>
+<pics/lateral_thinking.png, id=49, 385.44pt x 385.44pt>
 File: pics/lateral_thinking.png Graphic file (type png)
 <use pics/lateral_thinking.png>
 Package pdftex.def Info: pics/lateral_thinking.png  used on input line 151.
 (pdftex.def)             Requested size: 15.41496pt x 15.41496pt.
-<pics/discussion.png, id=49, 385.44pt x 385.44pt>
+<pics/discussion.png, id=50, 385.44pt x 385.44pt>
 File: pics/discussion.png Graphic file (type png)
 <use pics/discussion.png>
 Package pdftex.def Info: pics/discussion.png  used on input line 151.
 (pdftex.def)             Requested size: 15.41496pt x 15.41496pt.
-<pics/study.png, id=50, 385.44pt x 385.44pt>
+<pics/study.png, id=51, 385.44pt x 385.44pt>
 File: pics/study.png Graphic file (type png)
 <use pics/study.png>
 Package pdftex.def Info: pics/study.png  used on input line 151.
 (pdftex.def)             Requested size: 15.41496pt x 15.41496pt.
-<pics/speaking.png, id=51, 385.44pt x 385.44pt>
+<pics/speaking.png, id=52, 385.44pt x 385.44pt>
 File: pics/speaking.png Graphic file (type png)
 <use pics/speaking.png>
 Package pdftex.def Info: pics/speaking.png  used on input line 151.
 (pdftex.def)             Requested size: 15.41496pt x 15.41496pt.
-<pics/science.png, id=52, 385.44pt x 385.44pt>
+<pics/science.png, id=53, 385.44pt x 385.44pt>
 File: pics/science.png Graphic file (type png)
 <use pics/science.png>
 Package pdftex.def Info: pics/science.png  used on input line 151.
 (pdftex.def)             Requested size: 15.41496pt x 15.41496pt.
-<pics/technology.png, id=53, 385.44pt x 385.44pt>
+<pics/technology.png, id=54, 385.44pt x 385.44pt>
 File: pics/technology.png Graphic file (type png)
 <use pics/technology.png>
 Package pdftex.def Info: pics/technology.png  used on input line 151.
 (pdftex.def)             Requested size: 15.41496pt x 15.41496pt.
-<pics/ux.png, id=54, 385.44pt x 385.44pt>
+<pics/ux.png, id=55, 385.44pt x 385.44pt>
 File: pics/ux.png Graphic file (type png)
 <use pics/ux.png>
 Package pdftex.def Info: pics/ux.png  used on input line 151.
@@ -1527,71 +1572,80 @@ Package pdftex.def Info: pics/ux.png  used on input line 151.
 LaTeX Font Info:    Font shape `T1/ClearSans-TLF/b/n' in size <17.28> not avail
 able
 (Font)              Font shape `T1/ClearSans-TLF/bold/n' tried instead on input
- line 154.
+ line 162.
 LaTeX Font Info:    Font shape `T1/ClearSans-TLF/bold/n' will be
-(Font)              scaled to size 17.28pt on input line 154.
+(Font)              scaled to size 17.28pt on input line 162.
 LaTeX Font Info:    Font shape `T1/ClearSans-TLF/m/n' in size <12> not availabl
 e
 (Font)              Font shape `T1/ClearSans-TLF/regular/n' tried instead on in
-put line 155.
+put line 163.
 LaTeX Font Info:    Font shape `T1/ClearSans-TLF/regular/n' will be
-(Font)              scaled to size 12.0pt on input line 155.
+(Font)              scaled to size 12.0pt on input line 163.
 LaTeX Font Info:    Font shape `T1/ClearSans-TLF/m/n' in size <8> not available
 
 (Font)              Font shape `T1/ClearSans-TLF/regular/n' tried instead on in
-put line 157.
+put line 165.
 LaTeX Font Info:    Font shape `T1/ClearSans-TLF/regular/n' will be
-(Font)              scaled to size 8.0pt on input line 157.
+(Font)              scaled to size 8.0pt on input line 165.
 
-Underfull \hbox (badness 10000) in paragraph at lines 156--160
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 161--164
+Underfull \hbox (badness 10000) in paragraph at lines 164--168
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 166--171
+Underfull \hbox (badness 10000) in paragraph at lines 169--172
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 187--191
+Underfull \hbox (badness 10000) in paragraph at lines 174--179
+
+ []
+
+
+Overfull \hbox (7.06374pt too wide) in paragraph at lines 197--197
+[]\T1/ClearSans-TLF/bold/n/10 Organizzazione 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 195--199
 
  []
 
 LaTeX Font Info:    Font shape `T1/ClearSans-TLF/b/n' in size <12> not availabl
 e
 (Font)              Font shape `T1/ClearSans-TLF/bold/n' tried instead on input
- line 193.
+ line 201.
 LaTeX Font Info:    Font shape `T1/ClearSans-TLF/bold/n' will be
-(Font)              scaled to size 12.0pt on input line 193.
+(Font)              scaled to size 12.0pt on input line 201.
 [1
 
-{C:/Users/jacop/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./pics/flag
-s/Italy.png> <./pics/flags/GB.png> <./pics/paradigm.png> <./pics/programming.pn
-g> <./pics/database.png> <./pics/APS.png> <./pics/document.png> <./pics/problem
-_solving.png> <./pics/lateral_thinking.png> <./pics/discussion.png> <./pics/stu
-dy.png> <./pics/speaking.png> <./pics/science.png> <./pics/technology.png> <./p
-ics/ux.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 195.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 195.
- ("main (ENG).aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 195.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 195.
-Package rerunfilecheck Info: File `"main (ENG)".out' has not changed.
+{C:/Users/jacop/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./pics/prof
+ile.jpg> <./pics/flags/Italy.png> <./pics/flags/GB.png> <./pics/paradigm.png> <
+./pics/programming.png> <./pics/database.png> <./pics/APS.png> <./pics/document
+.png> <./pics/problem_solving.png> <./pics/lateral_thinking.png> <./pics/discus
+sion.png> <./pics/study.png> <./pics/speaking.png> <./pics/science.png> <./pics
+/technology.png> <./pics/ux.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 203.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 203.
+ ("main (IT).aux")
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 203.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 203.
+Package rerunfilecheck Info: File `"main (IT)".out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 34617 strings out of 492445
- 668204 string characters out of 3119819
- 779301 words of memory out of 3000000
- 38388 multiletter control sequences out of 15000+200000
- 588068 words of font info for 69 fonts, out of 3000000 for 9000
+ 34642 strings out of 492445
+ 668810 string characters out of 3119819
+ 783010 words of memory out of 3000000
+ 38408 multiletter control sequences out of 15000+200000
+ 588289 words of font info for 71 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 76i,15n,76p,801b,1143s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 76i,15n,76p,800b,1143s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/jacop/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/fontawesome
 /fontawesomeone.enc}{C:/Users/jacop/AppData/Local/Programs/MiKTeX 2.9/fonts/enc
 /dvips/fontawesome/fontawesometwo.enc}{C:/Users/jacop/AppData/Local/Programs/Mi
@@ -1600,9 +1654,9 @@ KTeX 2.9/fonts/enc/dvips/clearsans/clr_zxbkm4.enc}<C:/Users/jacop/AppData/Local
 acop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/intel/clearsans/ClearSans-Re
 gular.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/
 fontawesome/FontAwesome.pfb>
-Output written on "main (ENG).pdf" (1 page, 181101 bytes).
+Output written on "main (IT).pdf" (1 page, 1123971 bytes).
 PDF statistics:
- 95 PDF objects out of 1000 (max. 8388607)
+ 96 PDF objects out of 1000 (max. 8388607)
  2 named destinations out of 1000 (max. 500000)
- 11460 words of extra memory for PDF output out of 12000 (max. 10000000)
+ 11465 words of extra memory for PDF output out of 12000 (max. 10000000)
 
